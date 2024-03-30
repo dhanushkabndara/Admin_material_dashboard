@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <title>
+    Dashboard
+  </title>
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link id="pagestyle" href="../assets/css/dashboard.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/charts/chart-3/assets/css/chart-3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://unpkg.com/bs-brain@2.0.3/components/charts/chart-5/assets/controller/chart-5.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/charts/chart-5/assets/css/chart-5.css">
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://unpkg.com/bs-brain@2.0.3/components/charts/chart-3/assets/controller/chart-3.js"></script>
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+</head>
+
+<body class="g-sidenav-show  bg-gray-200">
+  <aside
+    class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark"
+    id="sidenav-main" style="background: linear-gradient(to right, #4169e1  , #1e90ff  );" style="margin-top: 30px;">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="#" target="_blank">
+        <img src="../assets/img/g.png" class="navbar-brand-img h-100" alt="main_logo" style=" width: auto; height: 100%; padding-left: 70px;">
+      </a>
+    </div>
+    
+    
+    <hr class="horizontal light mt-0 mb-2" style="margin-top: 20px;">
+
+    <div class="info clearfix">
+      <div class="image" style="display: flex; color: white; margin-left: 20px; margin-top: 10px">
+        <a href="#">
+          <img src="../assets/img/team-2.jpg" alt="John Doe"
+            style="border-radius: 50px; width: 35px !important; height: 35px !important; margin-top: 15px;" />
+        </a>
+        <h5 class="name" href="#" style="padding: 10px;">
+          <a style="color: white; align-items: center; background: none;">john doe</a>
+          <a style="color: white; background: none; font-size: 7px;">johndoe@gmail.com</a>
+        </h5>
+        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center"
+          style="margin-right: -5px;">
+          <i class="material-icons opacity-10" style="margin-right: 55px;">expand_more</i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main" style="margin-top: 0;">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white active bg-gradient-primary" href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <span><i class="material-icons opacity-10" style="color: black !important;">dashboard</i></span>
+            </div>
+            <span class="nav-link-text ms-1" style="color: black;">Dashboard</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">table_view</i>
+            </div>
+            <span class="nav-link-text ms-1">Staff Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">event_available</i>
+            </div>
+            <span class="nav-link-text ms-1">Quote Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">email</i>
+            </div>
+            <span class="nav-link-text ms-1">Email Sent</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="../pages/rtl.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">person</i>
+            </div>
+            <span class="nav-link-text ms-1">Users</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">people</i>
+            </div>
+            <span class="nav-link-text ms-1">Teams</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">insert_invitation</i>
+            </div>
+            <span class="nav-link-text ms-1">Customers & Vendors</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">table_view</i>
+            </div>
+            <span class="nav-link-text ms-1">Projects</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">local_play</i>
+            </div>
+            <span class="nav-link-text ms-1">A/P Invoice Entry</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">local_printshop</i>
+            </div>
+            <span class="nav-link-text ms-1">A/R Billing</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">important_devices</i>
+            </div>
+            <span class="nav-link-text ms-1">PC Payment Received</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white " href="#">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">table_view</i>
+            </div>
+            <span class="nav-link-text ms-1">Agency Payment</span>
+          </a>
+        </li>
+      </ul>
+
+
+
+    </div>
+    <div style="padding-right: 100px;">
+
+      <li class="nav-item">
+        <a class="nav-link text-white " href="#">
+          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="material-icons opacity-10">brightness_7</i>
+
+            <span class="nav-link-text ms-1">Setting</span>
+          </div>
+
+        </a>
+      </li>
+      <li class="nav-item" style="margin-top: -20px;">
+        <a class="nav-link text-white " href="#">
+          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="material-icons opacity-10">exit_to_app</i>
+            <span class="nav-link-text ms-1">Logout</span>
+          </div>
+
+        </a>
+      </li>
+
+    </div>
+  </aside>
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <!-- Navbar -->
+    <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl" id="navbarBlur"
+      data-scroll="true" style="border-radius: 0; background-color: rgb(246, 246, 246);">
+
+
+
+      <div class="container-fluid py-1 px-3">
+        <nav aria-label="breadcrumb">
+          <h4 class="font-weight-bolder mb-0">Dashboard</h4>
+        </nav>
+        <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+          <div class="ms-md-auto pe-md-3 mt-sm-100 align-items-center">
+            <div class="input-group input-group-outline">
+              <label class="form-label" style="font-size: 14px;">Type here...</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item dropdown pe-2 d-flex align-items-center">
+              <i class="fa fa-bell cursor-pointer"></i>
+              </a>
+            </li>
+
+
+            <div class="account-wrap">
+              <div class="account-item clearfix js-item-menu">
+                <div class="image" >
+                  <img src="../assets/img/team-2.jpg" alt="John Doe" style="border-radius: 50px; width: 30px !important; height: 30px !important;" />
+                </div>
+
+              </div>
+            </div>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid py-4">
+
+      <div class="row mt-4">
+        <div class="col-12 col-lg-8 col-xl-6 col-xxl-5">
+          <div class="card widget-card border-light shadow-sm">
+            <div class="card-body p-4">
+              <h5 class="card-title widget-card-title mb-3">Total Value Of Order</h5>
+              <div>
+                <canvas id="myChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12 col-lg-8 col-xl-6 col-xxl-5">
+          <div class="card widget-card border-light shadow-sm">
+            <div class="card-body p-4">
+              <h5 class="card-title widget-card-title mb-3">Total Value Of Order</h5>
+              <div>
+                <canvas id="stackedChartID3"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 col-lg-8 col-xl-6 col-xxl-5">
+            <div class="card widget-card border-light shadow-sm">
+              <div class="card-body p-4">
+                <h5 class="card-title widget-card-title mb-3">Month Over month over value</h5>
+                <div>
+                  <canvas id="stackedChartID"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-lg-8 col-xl-6 col-xxl-5">
+            <div class="card widget-card border-light shadow-sm">
+              <div class="card-body p-4">
+                <h5 class="card-title widget-card-title mb-3">Month Over month over value</h5>
+                <div>
+                  <canvas id="stackedChartID2"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="../assets/js/jquery.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+  <script>
+
+    var myContext = document.getElementById(
+      "stackedChartID").getContext('2d');
+    var myChart = new Chart(myContext, {
+      type: 'bar',
+      data: {
+        labels: ["APR23", "APR23", "APR23",
+          "APR23", "APR23", "APR23"],
+        datasets: [{
+          label: 'blue',
+          backgroundColor: "#367588",
+          data: [70, 90, 120, 110, 150, 200],
+        }, {
+          label: 'green',
+          backgroundColor: "#228b22 ",
+          data: [60, 40, 100, 65, 90, 160],
+        }, {
+          label: 'yelow',
+          backgroundColor: "#ffb347 ",
+          data: [80, 60, 130, 83, 180, 40],
+        }],
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: ''
+          },
+        },
+        scales: {
+          x: {
+            stacked: true,
+          },
+          y: {
+            stacked: true
+          }
+        }
+      }
+    }); 
+  </script>
+
+  <script>
+
+    var myContext = document.getElementById(
+      "stackedChartID2").getContext('2d');
+    var myChart = new Chart(myContext, {
+      type: 'bar',
+      data: {
+        labels: ["APR23", "APR23", "APR23",
+          "APR23", "APR23", "APR23"],
+        datasets: [{
+          label: 'blue',
+          backgroundColor: "#0047AB",
+          data: [70, 90, 120, 110, 150, 200],
+        }, {
+          label: 'green',
+          backgroundColor: "#2a8000",
+          data: [60, 40, 100, 65, 90, 160],
+        }, {
+          label: 'yelow',
+          backgroundColor: "#fdff00",
+          data: [80, 60, 130, 83, 180, 40],
+        }],
+      },
+      options: {
+        plugins: {
+          title: {
+            display: true,
+            text: ''
+          },
+        },
+        scales: {
+          x: {
+            stacked: true,
+          },
+          y: {
+            stacked: true
+          }
+        }
+      }
+    }); 
+  </script>
+
+
+  <script>
+
+    var myContext = document.getElementById(
+      "stackedChartID3").getContext('2d');
+    var myChart = new Chart(myContext, {
+      type: 'bar',
+      data: {
+        labels: ["2001", "2001", "2001",
+          "2001", "2001", "2001"],
+        datasets: [{
+
+          backgroundColor: "#ff8c00",
+          data: [70, 90, 120, 110, 150, 200],
+          label: 'BAC',
+        }, {
+          backgroundColor: "#ff4500",
+          data: [60, 40, 100, 65, 90, 160],
+          label: 'BAC',
+        }, {
+
+          backgroundColor: "#4169e1",
+          data: [80, 60, 130, 83, 180, 40],
+          label: 'BAC',
+        },
+        {
+
+          backgroundColor: "#e0218a",
+          data: [80, 60, 130, 83, 180, 40],
+          label: 'BAC',
+        }, {
+
+          backgroundColor: "#008080",
+          data: [80, 60, 130, 83, 180, 40],
+          label: 'BAC',
+        }
+        ],
+      },
+      options: {
+        plugins: {
+          title: {
+            display: false,
+            text: 'status'
+          },
+        },
+        scales: {
+          x: {
+            stacked: true,
+          },
+          y: {
+            stacked: true
+          }
+        }
+      }
+    }); 
+  </script>
+
+
+  <script>
+    var ctx = document.getElementById("myChart").getContext("2d");
+
+    var data = {
+      labels: ["BAC", "BAC", "BAC"],
+      datasets: [{
+        label: "2001",
+        backgroundColor: "blue",
+        data: [3, 7, 4]
+      }, {
+        label: "2001",
+        backgroundColor: "red",
+        data: [4, 3, 5]
+      }, {
+        label: "2001",
+        backgroundColor: "green",
+        data: [7, 2, 6]
+      }]
+    };
+
+    var myBarChart = new Chart(ctx, {
+      type: 'bar',
+      data: data,
+      options: {
+        barValueSpacing: 20,
+        scales: {
+          yAxes: [{
+            ticks: {
+              min: 0,
+            }
+          }]
+        }
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>
